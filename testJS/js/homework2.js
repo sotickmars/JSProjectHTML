@@ -64,8 +64,8 @@
 
 
 
-for(let num = -9; num < -4; ++num){
-    console.log(num+9);
-    console.log(0 + num);
-    // if(num >= -5) break;
-}
+// for(let num = -9; num < -4; ++num){
+//     console.log(num+9);
+//     console.log(0 + num);
+//     // if(num >= -5) break;
+// }
