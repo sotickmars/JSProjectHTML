@@ -62,35 +62,35 @@
 //     }
 // }
 
-let users = [
-{
-    userName:'John',
-    surname:'Peter',
-    age: 27
-}, {
-    userName:'Marta',
-    surname:'Peterson',
-    age: 22
-}
-];
+// let users = [
+// {
+//     userName:'John',
+//     surname:'Peter',
+//     age: 27
+// }, {
+//     userName:'Marta',
+//     surname:'Peterson',
+//     age: 22
+// }
+// ];
 
-let usereInfo = prompt("please enter Surname:");
-let res = usereInfo.toUpperCase();
+// let usereInfo = prompt("please enter Surname:");
+// let res = usereInfo.toUpperCase();
 
 
-for(let info of users) {
-    // for(let data in info) {
-        let resData = info.surname.toUpperCase()
-        if (res === resData){
-            console.log(info)
-        }
+// for(let info of users) {
+//     // for(let data in info) {
+//         let resData = info.surname.toUpperCase()
+//         if (res === resData){
+//             console.log(info)
+//         }
         // if (res === resData){
         //    console.log(info)
         // } else {
         // console.log('No results found for your request')
         // }
 
-}
+// }
 
 
 
@@ -239,3 +239,42 @@ for(let info of users) {
 // alert(pow(x, n));
 
 
+
+let num = [1, 10, 12, 15, 100, 15, 20, 14, 88, 97];
+
+let num1 = num.join().replace(/0/g, 'zero');
+    console.log(num1)
+
+
+    function zero() {
+        let arr = [];
+        for (let i = 0; i < 10; i++) {
+            let a = String(Math.floor((Math.random() * 1000) + 1));
+    
+            if (arr.indexOf(a) == -1) {
+                if (a % 10 == 0) {
+                    arr.push(a.replace(/0/g, 'zero'));
+                } else {
+                    arr.push(Number(a));
+                }
+            };
+        };
+        console.log(arr);
+    };
+    zero();
+
+
+    function toZero(arr) {
+        for (let i = 0; i < arr.length; i++) {
+          arr[i] = arr[i].toString().replace(/0/g, "zero");
+        }
+        return arr;
+      }
+      
+      let arr = [];
+      for (let i = 0; i < 10; i++) {
+        let a = Math.round(Math.random() * 1000);
+        arr.push(a);
+      }
+      toZero(arr);
+      console.log(arr);

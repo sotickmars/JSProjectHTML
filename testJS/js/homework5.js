@@ -68,18 +68,54 @@
 
 
 
-// let num = [5, 4, 6, 9, 8, 1, 2, 10, 3, 7];
-// let sort = (function(a,b){
-//     return a-b
-// })
+let num = [5, 4, 6, 9, 8, 1, 2, 10, 3, 7];
+let sort = (function(a,b){
+    return a-b
+})
 
-// console.log(num.sort(sort))
-
-
+console.log(num.sort(sort))
 
 
+// let num = [1, 10, 12, 15, 100, 15, 20, 14, 88, 97];
 
 
-let num = [1, 10, 12, 15, 100, 15, 20, 14, 88, 97];}
-let num1 = num.join().replace(/0/g, 'zero')
-    console.log(num1)
+// let num1 = num.join().replace(/0/g, 'zero')
+//     console.log(num1)
+
+
+
+//------------------------------------------------------------------------
+// ClassWork 7------------------------------------------------------------
+
+// //----- task 1
+// let a = prompt("Введите чмсло a");
+// let b = prompt("Введите чмсло b");
+// let c = prompt("Введите чмсло с");
+
+
+
+// function discr(a,b,c){
+//     let D = (b*b-4*a*c);
+//     if(D>0){
+//       const x1 = ((-b)+Math.sqrt(b*b-4*a*c))/2*a;
+//       const x2 = ((-b)-Math.sqrt(b*b-4*a*c))/2*a;
+//        console.log(x1)
+//        console.log(x2)
+//        return
+//     }
+//     if(D === 0){
+//         const x=(-b/(2*a));
+//         console.log(x)
+//     } else {
+//         console.log("решений нету")
+//     }
+// }
+
+// discr(a,b,c);
+
+//task 2 ----------------------------------------
+
+// let num = new Array(30);
+// for(i = -20; i<10; i++){
+//     if()
+// }
