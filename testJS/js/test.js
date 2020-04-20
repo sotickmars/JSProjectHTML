@@ -240,41 +240,123 @@
 
 
 
-let num = [1, 10, 12, 15, 100, 15, 20, 14, 88, 97];
+// let num = [1, 10, 12, 15, 100, 15, 20, 14, 88, 97];
 
-let num1 = num.join().replace(/0/g, 'zero');
-    console.log(num1)
+// let num1 = num.join().replace(/0/g, 'zero');
+//     console.log(num1)
 
 
-    function zero() {
-        let arr = [];
-        for (let i = 0; i < 10; i++) {
-            let a = String(Math.floor((Math.random() * 1000) + 1));
+//     function zero() {
+//         let arr = [];
+//         for (let i = 0; i < 10; i++) {
+//             let a = String(Math.floor((Math.random() * 1000) + 1));
     
-            if (arr.indexOf(a) == -1) {
-                if (a % 10 == 0) {
-                    arr.push(a.replace(/0/g, 'zero'));
-                } else {
-                    arr.push(Number(a));
-                }
-            };
-        };
-        console.log(arr);
-    };
-    zero();
+//             if (arr.indexOf(a) == -1) {
+//                 if (a % 10 == 0) {
+//                     arr.push(a.replace(/0/g, 'zero'));
+//                 } else {
+//                     arr.push(Number(a));
+//                 }
+//             };
+//         };
+//         console.log(arr);
+//     };
+//     zero();
 
 
-    function toZero(arr) {
-        for (let i = 0; i < arr.length; i++) {
-          arr[i] = arr[i].toString().replace(/0/g, "zero");
-        }
-        return arr;
-      }
+//     function toZero(arr) {
+//         for (let i = 0; i < arr.length; i++) {
+//           arr[i] = arr[i].toString().replace(/0/g, "zero");
+//         }
+//         return arr;
+//       }
       
-      let arr = [];
-      for (let i = 0; i < 10; i++) {
-        let a = Math.round(Math.random() * 1000);
-        arr.push(a);
-      }
-      toZero(arr);
-      console.log(arr);
+//       let arr = [];
+//       for (let i = 0; i < 10; i++) {
+//         let a = Math.round(Math.random() * 1000);
+//         arr.push(a);
+//       }
+//       toZero(arr);
+//       console.log(arr);
+
+
+
+
+
+
+
+//ClassWork 8
+let data = [
+    {
+        firstName:'Ashton',
+        lastName:'Kutcher',
+        age:40
+    }, {
+        firstName:'Bradley',
+        lastName:'Pit',
+        age:54
+    }, {
+        firstName:'Hannah',
+        lastName:'Dacota',
+        age:24
+    }
+];
+
+// for(i=0; i<data.length; i++){
+//     let fn1 = document.getElementById(`first${i}`)
+//     let fn2 = document.getElementById(`last${i}`)
+//     let fn3 = document.getElementById(`age${i}`)
+//     fn1.innerHTML = data[i].firstName
+//     fn2.innerHTML = data[i].lastName
+//     fn3.innerHTML = data[i].age
+//     obj = data[i]
+// }
+
+
+
+
+function creatTD(){
+    let fragmentTD = new DocumentFragment();
+         
+    for(i = 0; i < data.length; i++){
+        let td = document.createElement('td');
+        for()
+        td.append(Object.values(data[0]));
+        fragmentTD.append(td)
+    }
+    return fragmentTD;
+    // td.append(data[0].lastName);
+    // fragmentTD.append(td)
+    // return fragmentTD;
+
+
+    // for(let key in data[0]){
+    //     console.log([key].firstName)
+        // for(let keys in key){
+          
+        // }
+    // }
+
+        
+}
+
+function creatTR(){
+    let fragmentTR = new DocumentFragment();
+        
+    for(i = 0; i < data.length; i++){
+        let tr = document.createElement('tr');
+        tr.append(creatTD())
+        fragmentTR.append(tr)
+    }
+    return fragmentTR;
+}
+
+table.append(creatTR())
+
+console.log(creatTD())
+// console.log(data[0])
+
+
+
+
+
